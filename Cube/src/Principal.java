@@ -9,12 +9,10 @@ public class Principal extends JFrame{
 		this.setTitle("Menu Bataille Naval");
 	    this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		this.setSize(500, 500);
-		//this.getContentPane().add(new NorthClass());
-		//this.getContentPane().add(new MiddleClass());
-		//this.getContentPane().add(new SouthClass());
 		this.setLayout(new BorderLayout());
 		this.add(new NorthClass(), BorderLayout.NORTH);
 		this.add(new MiddleClass(), BorderLayout.CENTER);
+		this.add(new EastClass(), BorderLayout.WEST);
 		this.add(new SouthClass(), BorderLayout.SOUTH);
 		repaint();
 		this.setVisible(true);
