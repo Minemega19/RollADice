@@ -10,8 +10,11 @@ public class Principal extends JFrame{
 	    this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		this.setSize(500, 500);
 		this.setLayout(new BorderLayout());
+		
+		MiddleClass m1 = new MiddleClass();
+		m1.setBorder(BorderFactory.createLineBorder(Color.WHITE));
 		this.add(new NorthClass(), BorderLayout.NORTH);
-		this.add(new MiddleClass(), BorderLayout.CENTER);
+		this.add(m1, BorderLayout.CENTER);
 		this.add(new EastClass(), BorderLayout.WEST);
 		this.add(new SouthClass(), BorderLayout.SOUTH);
 		repaint();
